@@ -66,17 +66,54 @@ public class Main {
         System.out.println(triangle.toString());*/
 
 //---------------------------------Part 2-----------------------------------
-        //  (1) MyComplex
+         //  (1) MyComplex
+       /* MyComplex mycx1 = new MyComplex(5,7);
+        MyComplex mycx2 = new MyComplex(4,3);
+        System.out.println(mycx1);
+        System.out.println(mycx2);
+        System.out.println(mycx1.isImaginary());
+        System.out.println(mycx1.equals(mycx2));
+        System.out.println(mycx1.magnitude());
+        System.out.println(mycx1.argument());
+        MyComplex mycx3 = mycx1.addNew(mycx2);
+        System.out.println(mycx3);
+        System.out.println(mycx3.conjugate());
+        System.out.println(mycx1.multiply(mycx2));
+        System.out.println(mycx1.divide(mycx2));
+        System.out.println();*/
+
 
 
         //  (2) MyPolynomial
+       /* double arr1[] = {2,5};
+        double arr2[] = {2,3,4,5};
+        MyPolynomial pol1 = new MyPolynomial(arr1);
+        MyPolynomial pol2 = new MyPolynomial(arr2);
+        MyPolynomial sum = pol1.add(pol2);
+        MyPolynomial mul = pol1.multiple(pol2);
+        System.out.println(pol1);
+        System.out.println(pol2);
+        System.out.println(pol2.getDegree());
+        System.out.println(sum);
+        System.out.println(mul);
+        System.out.println();*/
 
+        
 
         //  (3) Ball
-
-
-
-
+        /*Container c1 = new Container(5,4,7,9);
+        System.out.println(c1);
+        Ball ball = new Ball(2,3,4,5, -33);
+        System.out.println(ball);
+        System.out.println(c1.collides(ball));
+        ball.move();
+        System.out.println(c1.collides(ball));
+        ball.move();
+        System.out.println(c1.collides(ball));
+        ball.reflectVertical();
+        ball.move();
+        ball.move();
+        System.out.println(c1.collides(ball));*/
 
     }
 }

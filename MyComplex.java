@@ -41,20 +41,88 @@ public class MyComplex {
         return (imag != 0);
     }
 
-//    public boolean equals(double real, double imag) {
-//        double epsilon = 0.000001d;
-//        MyComplex c1 = new MyComplex(real, imag);
-//        MyComplex c2 = new MyComplex();
-//                .......
-//    }
-
-
-
 
 
     @Override
     public String toString() {
-        return "(" + real + " + "
-                + imag + "i)";
+        if (imag >= 0)
+            return "(" +
+                    real +
+                    '+' + imag +
+                    "i)";
+        else return "(" +
+                real +
+                '-' + -imag +
+                "i)";
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+
+        MyComplex myComplex = (MyComplex) o;
+
+        if (Double.compare(myComplex.real, real) != 0)
+            return false;
+        return Double.compare(myComplex.imag, imag) == 0;
+    }
+
+    public boolean equals(double real, double imag) {
+        MyComplex o = new MyComplex(real, imag);
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+
+        MyComplex myComplex = (MyComplex) o;
+
+        if (Double.compare(myComplex.real, real) != 0)
+            return false;
+        return Double.compare(myComplex.imag, imag) == 0;
+    }
+
+
+    public double magnitude(){
+        return Math.sqrt(Math.pow(real,2) + Math.pow(imag,2));
+    }
+
+    public double argument(){
+        return Math.atan(imag/real);
+    }
+
+    public void add(MyComplex right){
+        this.real = this.real + right.real;
+        this.imag = this.imag + right.imag;
+    }
+
+    public MyComplex addNew(MyComplex right){
+        return new MyComplex(this.real + right.real, this.imag + right.imag);
+    }
+
+    public void subtract(MyComplex right){
+        this.real = this.real - right.real;
+        this.imag = this.imag - right.imag;
+    }
+
+    public MyComplex subtractNew(MyComplex right) {
+        return new MyComplex(this.real - right.real, this.imag - right.imag);
+    }
+
+    public MyComplex multiply(MyComplex right){
+        return new MyComplex(this.real * right.real - this.imag * right.imag,
+                this.real * right.imag + this.imag * right.real);
+    }
+
+    public MyComplex divide(MyComplex right){
+        return new MyComplex((this.real * right.real + this.imag * right.imag)/(Math.pow(right.real,2) +
+                Math.pow(right.imag,2)), (this.imag * right.real - this.real * right.imag)/
+                (Math.pow(right.real,2) + Math.pow(right.imag,2)));
+    }
+
+    public MyComplex conjugate(){
+        return new MyComplex(this.real, -this.imag);
     }
 }
