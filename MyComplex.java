@@ -69,6 +69,14 @@ public class MyComplex {
             return false;
         return Double.compare(myComplex.imag, imag) == 0;
     }
+    
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(real, imag);
+    }
+
+
 
     public boolean equals(double real, double imag) {
         MyComplex o = new MyComplex(real, imag);
@@ -125,4 +133,7 @@ public class MyComplex {
     public MyComplex conjugate(){
         return new MyComplex(this.real, -this.imag);
     }
+
+
+
 }

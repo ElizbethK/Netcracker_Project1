@@ -46,4 +46,33 @@ public class MyTriangle {
                 + ", v2=" + v2
                 + ", v3=" + v3 + "]";
     }
+
+     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyTriangle that = (MyTriangle) o;
+        return v1.equals(that.v1) && v2.equals(that.v2) && v3.equals(that.v3);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(v1, v2, v3);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return Float.compare(rectangle.length, length) == 0 && Float.compare(rectangle.width, width) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(length, width);
+    }
+
+
+
 }

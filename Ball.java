@@ -75,4 +75,18 @@ public class Ball {
                 + xDelta + "," + yDelta
                 + ")]";
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ball ball = (Ball) o;
+        return Float.compare(ball.x, x) == 0 && Float.compare(ball.y, y) == 0 && Float.compare(ball.xDelta, xDelta) == 0 && Float.compare(ball.yDelta, yDelta) == 0 && radius == ball.radius;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y, xDelta, yDelta, radius);
+
 }
