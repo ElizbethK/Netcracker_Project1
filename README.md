@@ -5,32 +5,32 @@ OOP tasks
 
                 Implement Java classes according to the UML diagrams given below
 
-1. Circle class
+1. [Circle class](https://github.com/ElizbethK/Hometasks1/blob/main/Circle.java)
 
 ![image](https://user-images.githubusercontent.com/101325108/179971548-5a73f03b-d9b7-499d-be87-4290564187d3.png)
 
 
-2. Rectangle class
+2. [Rectangle class](https://github.com/ElizbethK/Hometasks1/blob/main/Rectangle.java)
 
 ![image](https://user-images.githubusercontent.com/101325108/179971650-ef11cd06-db37-4c4a-8601-a5d3279b94f0.png)
 
 
-3. Employee class 
+3. [Employee class](https://github.com/ElizbethK/Hometasks1/blob/main/Employee.java) 
 
  ![image](https://user-images.githubusercontent.com/101325108/179971706-92a45f44-6376-4923-a60b-1c70885eff1f.png)
 
 
-4. Book class
+4. [Book class](https://github.com/ElizbethK/Hometasks1/blob/main/Book.java)
 
 ![image](https://user-images.githubusercontent.com/101325108/179971749-4257c856-e499-44b8-90bd-e8b44285b571.png)
 
 
-5. MyPoint class
+5. [MyPoint class](https://github.com/ElizbethK/Hometasks1/blob/main/MyPoint.java)
 
 ![image](https://user-images.githubusercontent.com/101325108/179971791-3794ce0b-b62f-410f-8e3f-b78d741292be.png)
 
 
-6. MyTriangle class
+6. [MyTriangle class](https://github.com/ElizbethK/Hometasks1/blob/main/MyTriangle.java)
 
 ![image](https://user-images.githubusercontent.com/101325108/179971832-9412ee04-1ed8-41b8-afe5-6e78222addf2.png)
 
@@ -41,6 +41,7 @@ OOP tasks
 
                        1. Implement a class for working with complex numbers
 
+[MyComplex class](https://github.com/ElizbethK/Hometasks1/blob/main/MyComplex.java)
 
 ![image](https://user-images.githubusercontent.com/101325108/179972606-8794c5ae-f2fd-4cb7-886b-d314a9f5d03a.png)
 
@@ -67,7 +68,7 @@ OOP tasks
 
                            2. Implement a class for working with polynomials
 
-
+[MyPolynomial class](https://github.com/ElizbethK/Hometasks1/blob/main/MyPolynomial.java)
  
  ![image](https://user-images.githubusercontent.com/101325108/179972804-5bade9a6-8989-441f-a78d-314ccba47674.png)
 
@@ -88,9 +89,10 @@ OOP tasks
 
                             3.Implement a class that simulates the movement of the ball
 
+[Ball class](https://github.com/ElizbethK/Hometasks1/blob/main/Ball.java)
+
 
  ![image](https://user-images.githubusercontent.com/101325108/179972892-e2b2b4cb-928e-4f9e-b18b-7cfd39ab2340.png)
-
 
 • Variables x,y correspond to the coordinates of the center of the ball, radius – the radius of the ball
 
